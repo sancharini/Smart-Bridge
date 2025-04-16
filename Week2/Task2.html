@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Assignment</title>
+  </head>
+  <body>
+    <h2>JavaScript Assignment Output</h2>
+    <p id="output"></p>
+
+    <script>
+      // Task 1: Declare age and determine if the person is an adult
+      let age = 25;
+      let isAdult = age >= 18; // true if age is 18 or more, otherwise false
+
+      // Task 2: Perform arithmetic operations
+      let x = 10;
+      let y = 5;
+      let addition = x + y;
+      let multiplication = x * y;
+      let modulus = x % y;
+
+      // Task 3: Check if a number is even or odd
+      let n = 7; // You can change this number to test
+      let isEven = n % 2 === 0 ? "Even" : "Odd";
+
+      // Task 4: Store numbers from 1 to 5 in an array
+      let numbersArray = [];
+      for (let i = 1; i <= 5; i++) {
+        numbersArray.push(i);
+      }
+
+      // Task 5: Function to return the square of a number
+      function square(num) {
+        return num * num;
+      }
+
+      // Displaying the results
+      document.getElementById("output").innerHTML = `
+            <strong>Age:</strong> ${age} <br>
+            <strong>Is Adult:</strong> ${isAdult} <br>
+            <strong>Addition (x + y):</strong> ${addition} <br>
+            <strong>Multiplication (x * y):</strong> ${multiplication} <br>
+            <strong>Modulus (x % y):</strong> ${modulus} <br>
+            <strong>Number ${n} is:</strong> ${isEven} <br>
+            <strong>Numbers Array:</strong> ${numbersArray.join(", ")} <br>
+            <strong>Square of 4:</strong> ${square(4)}
+        `;
+    </script>
+  </body>
+</html>
